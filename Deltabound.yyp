@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Test","path":"objects/Test/Test.yy",},"order":6,},
     {"id":{"name":"init","path":"scripts/init/init.yy",},"order":0,},
     {"id":{"name":"Spr_PlayerIdle","path":"sprites/Spr_PlayerIdle/Spr_PlayerIdle.yy",},"order":0,},
     {"id":{"name":"Spr_TilesetMain","path":"sprites/Spr_TilesetMain/Spr_TilesetMain.yy",},"order":0,},
