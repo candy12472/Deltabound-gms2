@@ -8,4 +8,4 @@ if charTurn != -1
 	draw_sprite(Spr_Select, 0, xx + ((xDraw[0] + 19) * charTurn), yy + (14 * lSelect))
 }
 
-draw_sprite_ext(Spr_BattleArea, 0, 160, 80, areaXscale, areaYscale, areaAngle, c_white, 1);
+draw_sprite_ext(Spr_BattleAreaBG, 0, 160, 80, areaXscale, areaYscale, areaAngle, c_white, 1);

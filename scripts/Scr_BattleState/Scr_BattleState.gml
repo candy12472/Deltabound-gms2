@@ -45,4 +45,9 @@ function BattleEnemyAttack()
 	{
 		instance_create_layer(160, 80, layer, Obj_Heart);
 	}
+	
+	if !instance_exists(Obj_BattleArea)
+	{
+		instance_create_layer(160, 80, layer, Obj_BattleArea);
+	}
 }
