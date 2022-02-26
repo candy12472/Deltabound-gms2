@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Snd_SlashBig.wav",
-  "duration": 1.851145,
+  "soundFile": "Snd_SlashBig.mp3",
+  "duration": 0.992625,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

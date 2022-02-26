@@ -1,4 +1,4 @@
-var clubs = instance_create_layer(random_range(120, 200), 20, "Battle", Obj_Clubs);
+var clubs = instance_create_depth(random_range(120, 200), 20, depth, Obj_Clubs);
 
 randomize();
 

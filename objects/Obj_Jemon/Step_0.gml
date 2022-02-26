@@ -10,10 +10,10 @@ if global.battle = true && alarm[0] = -1
 {
 	x = lerp(x, 256, 0.2)
 	y = lerp(y, 96, 0.2)
-	
-	if global.flag[13] = 0
-	{
-		audio_play_sound(Mus_Battle, 0, true);
-		global.flag[13] = 1;
-	}
+}
+
+if !audio_is_playing(Snd_SlashBig) && global.flag[4] = 1 && global.flag[13] = 0
+{
+	audio_play_sound(song, 0, true);
+	global.flag[13] = 1;
 }

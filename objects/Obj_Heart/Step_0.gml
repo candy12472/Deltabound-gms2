@@ -7,6 +7,9 @@ var shift = keyboard_check(ord("X"));
 moveX = (right - left) * moveSpeed;
 moveY = (down - up) * moveSpeed;
 
+x += moveX;
+y += moveY;
+
 if shift moveSpeed = 0.5;
 else moveSpeed = 1;
 
@@ -22,5 +25,11 @@ if place_meeting(x, y + moveY, Obj_BattleArea)
 	moveY = 0;
 }
 
-x += moveX;
-y += moveY;
+if cooldown > 0
+{
+	visible = !visible;
+}
+else if cooldown <= 0
+{
+	visible = true
+}

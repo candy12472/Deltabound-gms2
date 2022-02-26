@@ -1,14 +1,9 @@
-if global.battle = true
+if global.flag[28] = 1
 {
-	layer_set_visible(layer_get_id("Instances"), false)
-	layer_set_visible(layer_get_id("MainTiles"), false)
-	layer_set_visible(layer_get_id("BattleBG"), true)
-}
-else
-{
-	layer_set_visible(layer_get_id("Instances"), true)
-	layer_set_visible(layer_get_id("MainTiles"), true)
-	layer_set_visible(layer_get_id("BattleBG"), false)
+	Obj_Player.visible = !global.battle;
+	Obj_Par_Interact.visible = !global.battle;
+	layer_set_visible(layer_get_id("MainTiles"), !global.battle)
+	layer_set_visible(layer_get_id("BattleBG"), global.battle)
 }
 
 layer_background_blend(layer_background_get_id(layer_get_id("BattleBG")), merge_color(c_white, c_black, bgBlend))
@@ -29,4 +24,9 @@ if bgBlend > 0 && i = true
 else if bgBlend <= 0 && i = true
 {
 	i = false
+}
+
+with(all)
+{
+	depth = -bbox_bottom;
 }

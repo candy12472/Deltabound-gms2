@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_PlayerIdle","path":"sprites/Spr_PlayerIdle/Spr_PlayerIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_PlayerIdle",
     "tags": [],
     "resourceType": "GMSequence",

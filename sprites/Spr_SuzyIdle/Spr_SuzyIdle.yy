@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_SuzyIdle","path":"sprites/Spr_SuzyIdle/Spr_SuzyIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_SuzyIdle",
     "tags": [],
     "resourceType": "GMSequence",

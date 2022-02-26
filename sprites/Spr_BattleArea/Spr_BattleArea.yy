@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_BattleArea","path":"sprites/Spr_BattleArea/Spr_BattleArea.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_BattleArea",
     "tags": [],
     "resourceType": "GMSequence",

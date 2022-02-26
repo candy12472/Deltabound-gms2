@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_ChrisIdle","path":"sprites/Spr_ChrisIdle/Spr_ChrisIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_ChrisIdle",
     "tags": [],
     "resourceType": "GMSequence",

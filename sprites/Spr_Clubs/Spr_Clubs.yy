@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_Clubs","path":"sprites/Spr_Clubs/Spr_Clubs.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_Clubs",
     "tags": [],
     "resourceType": "GMSequence",

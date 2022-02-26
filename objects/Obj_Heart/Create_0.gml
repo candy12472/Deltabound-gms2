@@ -5,4 +5,6 @@ moveSpeed = 1;
 
 depth = 10;
 
-cooldown = 60;
+cooldown = 30;
+
+damage = irandom_range(40, 60);

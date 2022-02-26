@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_BattleBG","path":"sprites/Spr_BattleBG/Spr_BattleBG.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_BattleBG",
     "tags": [],
     "resourceType": "GMSequence",

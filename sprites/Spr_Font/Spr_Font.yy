@@ -383,7 +383,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_Font","path":"sprites/Spr_Font/Spr_Font.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_Font",
     "tags": [],
     "resourceType": "GMSequence",

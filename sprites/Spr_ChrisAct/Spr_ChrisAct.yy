@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_ChrisAct","path":"sprites/Spr_ChrisAct/Spr_ChrisAct.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_ChrisAct",
     "tags": [],
     "resourceType": "GMSequence",

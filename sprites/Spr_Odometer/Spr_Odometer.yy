@@ -375,7 +375,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_Odometer","path":"sprites/Spr_Odometer/Spr_Odometer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_Odometer",
     "tags": [],
     "resourceType": "GMSequence",

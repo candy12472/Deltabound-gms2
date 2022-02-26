@@ -7,7 +7,7 @@ global.txtNum = 0;
 for(var i = 0; i < 999; i++;)
 {
 	global.text[i] = "";
-	global.flag[i] = false;
+	global.flag[i] = 0;
 }
 
 global.battle = false;

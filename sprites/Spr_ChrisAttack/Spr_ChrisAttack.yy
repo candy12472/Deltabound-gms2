@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_ChrisAttack","path":"sprites/Spr_ChrisAttack/Spr_ChrisAttack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_ChrisAttack",
     "tags": [],
     "resourceType": "GMSequence",

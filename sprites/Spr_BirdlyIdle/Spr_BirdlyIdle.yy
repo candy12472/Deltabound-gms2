@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_BirdlyIdle","path":"sprites/Spr_BirdlyIdle/Spr_BirdlyIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_BirdlyIdle",
     "tags": [],
     "resourceType": "GMSequence",

@@ -4,28 +4,53 @@ function BattleSelectAction()
 {
 	if keyboard_check_pressed(ord("Z"))
 	{
+		audio_play_sound(Snd_Select, 0, false);
+		select = 0;
+		
 		if charTurn + 1 < global.charNumber + 1 && charTurn != -1
 		{
 			charTurn += 1;
-			select = 0;
 		}
 		else
 		{
-			select = 0;
 			charTurn = -1;
 			state = BattleEnemyAttack;
-			instance_create_layer(x, y, layer, Obj_ClubsTest);
+			instance_create_depth(x, y, depth, Obj_ClubsTest);
 		}
+	}
+	
+	if charTurn != -1 && audio_is_playing(Mus_Battle)
+	{
+		yDraw[charTurn] = lerp(yDraw[charTurn], 181, 0.3);
 	}
 	
 	if charTurn != -1
 	{
-		yDraw[charTurn] = lerp(yDraw[charTurn], 181, 0.3);
+		if global.hp[charTurn] <= 0
+		{
+			yDraw[charTurn] = 251;
+			
+			if charTurn + 1 < global.charNumber + 1 && charTurn != -1
+			{
+				charTurn += 1;
+			}
+			else
+			{
+				charTurn = -1;
+				state = BattleEnemyAttack;
+				instance_create_depth(x, y, depth, Obj_ClubsTest);
+			}
+		}
 	}
 	
 	areaAngle = lerp(areaAngle, 180, 0.2);
 	areaXscale = lerp(areaXscale, 0, 0.2);
 	areaYscale = lerp(areaYscale, 0, 0.2);
+	
+	if keyboard_check_pressed(vk_down) or keyboard_check_pressed(vk_up)
+	{
+		audio_play_sound(Snd_MenuMove, 0, false);
+	}
 	
 	select += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	select = clamp(select, 0, 4);
@@ -43,11 +68,11 @@ function BattleEnemyAttack()
 
 	if !instance_exists(Obj_Heart)
 	{
-		instance_create_layer(160, 80, layer, Obj_Heart);
+		instance_create_depth(160, 80, depth, Obj_Heart);
 	}
 	
 	if !instance_exists(Obj_BattleArea)
 	{
-		instance_create_layer(160, 80, layer, Obj_BattleArea);
+		instance_create_depth(160, 80, depth, Obj_BattleArea);
 	}
 }
