@@ -7,9 +7,6 @@ var shift = keyboard_check(ord("X"));
 moveX = (right - left) * moveSpeed;
 moveY = (down - up) * moveSpeed;
 
-x += moveX;
-y += moveY;
-
 if shift moveSpeed = 0.5;
 else moveSpeed = 1;
 
@@ -33,3 +30,6 @@ else if cooldown <= 0
 {
 	visible = true
 }
+
+x += moveX;
+y += moveY;

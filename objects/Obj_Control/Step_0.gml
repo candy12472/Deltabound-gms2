@@ -1,7 +1,7 @@
 if global.flag[28] = 1
 {
 	Obj_Player.visible = !global.battle;
-	Obj_Par_Interact.visible = !global.battle;
+	if instance_exists(Obj_Par_Interact) Obj_Par_Interact.visible = !global.battle;
 	layer_set_visible(layer_get_id("MainTiles"), !global.battle)
 	layer_set_visible(layer_get_id("BattleBG"), global.battle)
 }

@@ -102,7 +102,7 @@
             {"id":"525125bb-29b0-4e40-a69a-3daa1f0a6b5d","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2078c1eb-0c24-4f17-b02b-0d42dd007ff1","path":"sprites/Spr_PlayerWalk/Spr_PlayerWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9b025278-7ba3-4778-b6e4-390c078d2636","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"598838ce-ae34-4fac-826e-b153247081d8","path":"sprites/Spr_PlayerWalk/Spr_PlayerWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7a32b4ca-c8dc-4f6d-adef-bec034000269","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"416277de-f3d6-4c14-b2b5-e4c9a6a9561a","path":"sprites/Spr_PlayerWalk/Spr_PlayerWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_PlayerWalk","path":"sprites/Spr_PlayerWalk/Spr_PlayerWalk.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "Spr_PlayerWalk",
     "tags": [],
     "resourceType": "GMSequence",
@@ -127,7 +127,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"71d46984-56b5-44a5-97e2-68a056b2b541","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Entities/Player.yy",

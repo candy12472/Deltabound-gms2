@@ -19,7 +19,18 @@ function BattleSelectAction()
 		}
 	}
 	
-	if charTurn != -1 && audio_is_playing(Mus_Battle)
+	if keyboard_check_pressed(ord("X"))
+	{
+		audio_play_sound(Snd_Select, 0, false);
+		select = 0;
+		
+		if charTurn - 1 >= 0 && charTurn != -1
+		{
+			charTurn -= 1;
+		}
+	}
+	
+	if charTurn != -1 && audio_is_playing(global.song)
 	{
 		yDraw[charTurn] = lerp(yDraw[charTurn], 181, 0.3);
 	}
