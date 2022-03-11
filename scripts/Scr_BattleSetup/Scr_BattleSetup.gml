@@ -3,7 +3,12 @@
 function Scr_BattleSetup()
 {
 	instance_create_depth(0, 0, depth, Obj_Battle);
-	instance_create_depth(0, 0, depth, Obj_Odometer);
+	
+	for(var i = -1; i < global.charNumber; i++;)
+	{
+		instance_create_depth(0, 0, depth, Obj_Odometer).i = i + 1;
+	}
+	
 	for(var i = 0; i < 4; i++;)
 	{
 		if global.char[i] != noone

@@ -1,4 +1,4 @@
-if global.flag[28] = 1
+if Obj_Par_Enemy.playSong = true && Obj_Par_Enemy.inBattle = true
 {
 	Obj_Player.visible = !global.battle;
 	if instance_exists(Obj_Par_Interact) Obj_Par_Interact.visible = !global.battle;

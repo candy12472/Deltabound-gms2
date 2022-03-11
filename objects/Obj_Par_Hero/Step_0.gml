@@ -31,13 +31,8 @@ if shakeValue > 0
 
 if (timer > 0) timer--;
 
-if global.hp[0] <= 0 && global.hp[1] <= 0 && global.hp[2] <= 0
+if keyboard_check_pressed(ord("C"))
 {
-	instance_destroy(Obj_Jemon);
-	instance_destroy(Obj_BattleArea);
-	instance_destroy(Obj_Battle);
-	instance_destroy(Obj_ClubsTest);
-	instance_destroy(Obj_Heart);
-	audio_stop_sound(Mus_Battle);
+	Scr_BattleEnd();
 	global.battle = false;
 }

@@ -58,7 +58,7 @@ function BattleSelectAction()
 	areaXscale = lerp(areaXscale, 0, 0.2);
 	areaYscale = lerp(areaYscale, 0, 0.2);
 	
-	if keyboard_check_pressed(vk_down) or keyboard_check_pressed(vk_up)
+	if keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_up)
 	{
 		audio_play_sound(Snd_MenuMove, 0, false);
 	}

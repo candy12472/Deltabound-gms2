@@ -1,0 +1,3 @@
+inBattle = false;
+
+playSong = false;

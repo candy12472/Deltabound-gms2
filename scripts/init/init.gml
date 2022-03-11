@@ -18,9 +18,9 @@ global.textSpeed = 1;
 global.font = font_add_sprite_ext(Spr_Font, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()<>{}·[]!?:;,.$/=&*", true, 1);
 
 //Health points of every character
-global.hp[0] = 10;
-global.hp[1] = 10;
-global.hp[2] = 10;
+global.hp[0] = "200";
+global.hp[1] = "200";
+global.hp[2] = "200";
 
 global.charNumber = 2;
 

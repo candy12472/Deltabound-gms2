@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "Spr_LilJ",
-    "path": "sprites/Spr_LilJ/Spr_LilJ.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Obj_Par_Enemy",
-    "path": "objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Parents",
+    "path": "folders/Objects/Parents.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_LilJ",
+  "name": "Obj_Par_Battle",
   "tags": [],
   "resourceType": "GMObject",
 }
