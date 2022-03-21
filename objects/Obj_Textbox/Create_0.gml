@@ -1,10 +1,17 @@
-/// @desc last edited by LunaticWyrm467
-//---------------Upon Creation
-//-----Variable Declaration
+myString = global.text[0];
+textSound = Snd_Text;
 
-//-----Dialogue
-//Iteration
-star_i = 0;
+pos = 0;
+rate = 2;
+drawXscale = 0;
+drawYscale = 1;
 
-//Assets
-star_TexBox = Spr_Textbox
+playSound = true;
+drawTextbox = true;
+drawText = " ";
+
+font = Fnt_Main;
+Length = string_length(myString);
+color = c_white;
+
+alarm[0] = rate;

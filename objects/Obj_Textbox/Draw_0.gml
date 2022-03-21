@@ -1,10 +1,9 @@
-/// @desc last edited by LunaticWyrm467
-//---------------When Sprite is Drawn
+draw_sprite_ext(Spr_Textbox, 0, view_get_xport(view_camera[0]) + 160, view_get_yport(view_camera[0]) + 200, drawXscale, drawYscale, 0, c_white, 1);
 
-//-----Drawing of Object
-//Textbox
-draw_sprite(star_TexBox, 0, camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 1.2)
+if drawXscale > 0.999 && drawYscale > 0.999 && drawTextbox = true
+{
+	draw_text_transformed(view_get_xport(view_camera[0]) + 25, view_get_yport(view_camera[0]) + 175, drawText, 0.5, 0.5, 0)
+}
 
-//Dialogue
-draw_text(32, camera_get_view_height(view_camera[0]) / 1.4, string_copy(global.text[global.txtNum], 0, star_i));
-draw_set_font(global.font);
+draw_set_font(font);
+draw_set_color(color);

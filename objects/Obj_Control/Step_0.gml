@@ -1,4 +1,4 @@
-if Obj_Par_Enemy.playSong = true && Obj_Par_Enemy.inBattle = true
+if instance_exists(Obj_Par_Enemy) && Obj_Par_Enemy.playSong = true && Obj_Par_Enemy.inBattle = true
 {
 	Obj_Player.visible = !global.battle;
 	if instance_exists(Obj_Par_Interact) Obj_Par_Interact.visible = !global.battle;
@@ -24,9 +24,4 @@ if bgBlend > 0 && i = true
 else if bgBlend <= 0 && i = true
 {
 	i = false
-}
-
-with(all)
-{
-	depth = -bbox_bottom;
 }

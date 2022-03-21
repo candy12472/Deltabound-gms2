@@ -6,16 +6,11 @@ global.txtNum = 0;
 //Whoever did the dialogue please comment what this thing does here I'm too tired
 for(var i = 0; i < 999; i++;)
 {
-	global.text[i] = "";
+	global.text[i] = -4;
 	global.flag[i] = 0;
 }
 
 global.battle = false;
-
-global.textSpeed = 1;
-
-//Set Font Per Character
-global.font = font_add_sprite_ext(Spr_Font, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()<>{}·[]!?:;,.$/=&*", true, 1);
 
 //Health points of every character
 global.hp[0] = "200";

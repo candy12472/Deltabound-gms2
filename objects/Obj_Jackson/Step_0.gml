@@ -51,17 +51,4 @@ switch(star_currExpress)
 if keyboard_check_pressed(ord("Z")) && star_player.kin_InteractCol == id
 {
 	event_user(0);
-	
-	switch(global.txtNum)
-	{
-		case 0:
-		{
-			star_currExpress = star_Express.fancy;
-		}break;
-		
-		case 1:
-		{
-			star_currExpress = star_Express.blocked;
-		}break;
-	}
 }

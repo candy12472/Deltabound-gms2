@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Snd_TensionHorn.wav",
-  "duration": 2.774229,
+  "duration": 2.769229,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

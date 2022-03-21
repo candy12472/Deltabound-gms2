@@ -1,9 +1,13 @@
-/// @desc last edited by LunaticWyrm467
-//---------------Per Frame
-//-----Speed/Text Length
-var temp_StrLen = string_length(global.text[global.txtNum]);
-
-if star_i < temp_StrLen
+if drawTextbox && drawXscale < 1
 {
-	star_i += 0.5 * global.textSpeed;
+	drawXscale += 0.2;
+}
+else if !drawTextbox && drawXscale > 0
+{
+	drawXscale -= 0.2;
+	
+	if drawXscale < 0.1
+	{
+		instance_destroy();
+	}
 }

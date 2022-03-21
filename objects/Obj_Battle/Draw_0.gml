@@ -10,3 +10,5 @@ if charTurn != -1 && audio_is_playing(global.song)
 
 draw_sprite_ext(Spr_BattleAreaBG, 0, 160, 80, areaXscale, areaYscale, areaAngle, c_white, 1);
 draw_sprite_ext(Spr_BattleArea, 0, 160, 80, areaXscale, areaYscale, areaAngle, c_white, 1);
+
+draw_set_font(font_add_sprite_ext(Spr_Numbers, "0123456789+-%", true, 1));

@@ -1,17 +1,18 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Mus_RoughBattle.mp3",
-  "duration": 102.901314,
+  "duration": 102.896309,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
