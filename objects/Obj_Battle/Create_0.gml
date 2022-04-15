@@ -33,4 +33,16 @@ areaXscale = 0;
 areaYscale = 0;
 areaAngle = 180;
 
+enum actions
+{
+	idle,
+	bash,
+	act,
+	items,
+	spare,
+	defend
+}
+
+action = actions.idle;
+
 state = BattleSelectAction;

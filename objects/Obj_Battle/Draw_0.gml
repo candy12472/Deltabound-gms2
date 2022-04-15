@@ -3,7 +3,7 @@ for(var i = -1; i < global.charNumber; i++;)
 	draw_sprite(Spr_CharMenu, i + 1, xDraw[i + 1], yDraw[i + 1])
 }
 
-if charTurn != -1 && audio_is_playing(global.song)
+if charTurn != -1 && global.songPlaying = true
 {
 	draw_sprite(Spr_Select, 0, xx + ((xDraw[0] + 19) * charTurn), yy + (14 * lSelect))
 }

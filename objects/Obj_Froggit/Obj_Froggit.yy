@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_Par_Interact",
-    "path": "objects/Obj_Par_Interact/Obj_Par_Interact.yy",
+    "name": "Obj_Par_Enemy",
+    "path": "objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,13 +23,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"alertSprite","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"objectId":{"name":"Obj_Par_Enemy","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"value":"Spr_Froggit","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"idleSprite","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"objectId":{"name":"Obj_Par_Enemy","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"value":"Spr_Froggit","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"battleSprite","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"objectId":{"name":"Obj_Par_Enemy","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"value":"Spr_Froggit","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"mus","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"objectId":{"name":"Obj_Par_Enemy","path":"objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",},"value":"Mus_Battle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Entities",
     "path": "folders/Objects/Entities.yy",

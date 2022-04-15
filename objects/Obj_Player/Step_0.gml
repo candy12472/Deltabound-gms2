@@ -8,6 +8,7 @@ control_Right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 control_Up = keyboard_check(ord("W")) || keyboard_check(vk_up);
 control_Down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 control_Menu = keyboard_check_pressed(ord("C"));
+control_Restart = keyboard_check_pressed(ord("R"));
 control_Shift = keyboard_check(ord("X"));
 control_Fullscreen = keyboard_check_pressed(vk_f4);
 
@@ -21,6 +22,8 @@ kin_InteractCol = collision_rectangle(x - 6, y - 6, x + 6, y + 6, star_InteractO
 //-----Execution
 //Exit Game
 if control_Esc game_end()
+
+if control_Restart game_restart()
 
 //Display Menu
 if control_Menu && !instance_exists(Obj_Pause) instance_create_depth(0, 0, depth, Obj_Pause)

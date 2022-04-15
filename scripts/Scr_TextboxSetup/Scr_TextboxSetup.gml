@@ -9,6 +9,10 @@ function TextboxSetup()
 	//Check if player interacted with an interactible object...
 	if keyboard_check_pressed(ord("Z")) && kin_InteractCol != noone
 	{
+		with(kin_InteractCol)
+		{
+			event_user(0);
+		}
 		//If Textbox already exists, simply use the current textbox
 		if !instance_exists(temp_TexBoxObj)
 		{

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GUI",
-    "path": "folders/Sprites/GUI.yy",
+    "name": "Battle",
+    "path": "folders/Sprites/GUI/Battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_Select",

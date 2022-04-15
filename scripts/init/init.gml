@@ -10,15 +10,16 @@ for(var i = 0; i < 999; i++;)
 	global.flag[i] = 0;
 }
 
-global.battle = false;
-
 //Health points of every character
 global.hp[0] = "200";
 global.hp[1] = "200";
 global.hp[2] = "200";
 
-global.charNumber = 2;
+global.song = "battle.ogg";
+global.songPlaying = false;
 
+global.charNumber = 2;
+global.battle = false;
 global.char = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, noone]
 
-global.song = Mus_Battle;
+global.money = 800;

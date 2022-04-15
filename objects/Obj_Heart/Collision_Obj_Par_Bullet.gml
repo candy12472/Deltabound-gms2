@@ -1,7 +1,5 @@
 if cooldown <= 0
 {
-	visible = true;
-	
 	var target = irandom(global.charNumber);
 	
 	damage = irandom_range(40, 60);
@@ -32,3 +30,5 @@ with(other)
 {
 	instance_destroy();
 }
+
+

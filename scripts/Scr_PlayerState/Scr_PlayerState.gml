@@ -10,7 +10,7 @@ function DynaState() {
 	state = pointer_null;
 	
 	//Decide which state should be executed
-	if !instance_exists(Obj_Textbox) && !instance_exists(Obj_Pause) && !place_meeting(x, y, Obj_Par_Enemy) state = PlayerStateFree;
+	if !instance_exists(Obj_Textbox) && !instance_exists(Obj_Pause) && !instance_exists(Obj_Battle) && !place_meeting(x, y, Obj_Par_Enemy) state = PlayerStateFree;
 	else state = PlayerStateStall;
 
 	//Execute State

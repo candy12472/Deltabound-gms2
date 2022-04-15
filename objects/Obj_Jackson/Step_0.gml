@@ -46,9 +46,3 @@ switch(star_currExpress)
 	}
 	break;
 }
-
-//Init new expression with a new page of dialogue
-if keyboard_check_pressed(ord("Z")) && star_player.kin_InteractCol == id
-{
-	event_user(0);
-}

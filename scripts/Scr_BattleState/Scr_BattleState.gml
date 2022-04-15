@@ -30,7 +30,7 @@ function BattleSelectAction()
 		}
 	}
 	
-	if charTurn != -1 && audio_is_playing(global.song)
+	if charTurn != -1 && global.songPlaying = true
 	{
 		yDraw[charTurn] = lerp(yDraw[charTurn], 181, 0.3);
 	}
@@ -78,12 +78,8 @@ function BattleEnemyAttack()
 	areaYscale = lerp(areaYscale, 1, 0.2);
 
 	if !instance_exists(Obj_Heart)
-	{
-		instance_create_depth(160, 80, depth, Obj_Heart);
-	}
+		instance_create(160, 80, Obj_Heart);
 	
 	if !instance_exists(Obj_BattleArea)
-	{
-		instance_create_depth(160, 80, depth, Obj_BattleArea);
-	}
+		instance_create(160, 80, Obj_BattleArea);
 }
