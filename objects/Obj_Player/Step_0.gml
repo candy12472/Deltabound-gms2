@@ -17,7 +17,6 @@ kin_InputDir = point_direction(0, 0, control_Right - control_Left, control_Down 
 kin_InputMag = (control_Right - control_Left != 0) || (control_Down - control_Up != 0);
 
 //Collisions
-kin_InteractCol = collision_rectangle(x - 6, y - 6, x + 6, y + 6, star_InteractObj, false, false);
 
 //-----Execution
 //Exit Game
@@ -30,9 +29,6 @@ if control_Menu && !instance_exists(Obj_Pause) instance_create_depth(0, 0, depth
 
 //Fullscreen Control
 if control_Fullscreen window_set_fullscreen(!window_get_fullscreen());
-
-//Setup Textbox
-TextboxSetup();
 
 //Run State
 if(control_Shift)

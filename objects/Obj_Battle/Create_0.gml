@@ -1,5 +1,6 @@
 charTurn = 0;
 
+//Character UI positions
 switch(global.charNumber)
 {
 	case 0:
@@ -21,28 +22,18 @@ switch(global.charNumber)
 	break;
 }
 
-yDraw = [251, 251, 251]
+yDraw = [243, 243, 243]
 
+//Hand select variables
 select = 0;
 lSelect = 0;
-
 xx = 104;
-yy = 176;
+yy = 185;
 
+//Bullet hell area variables
 areaXscale = 0;
 areaYscale = 0;
 areaAngle = 180;
 
-enum actions
-{
-	idle,
-	bash,
-	act,
-	items,
-	spare,
-	defend
-}
-
-action = actions.idle;
-
+//Battle state
 state = BattleSelectAction;

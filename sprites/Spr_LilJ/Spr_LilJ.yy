@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Entities/Enemies.yy",
+    "name": "NPCs",
+    "path": "folders/Sprites/Entities/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_LilJ",

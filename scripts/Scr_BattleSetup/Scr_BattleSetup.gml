@@ -1,9 +1,10 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//---------------Battle Start
 function Scr_BattleSetup()
 {
+	//Create battle manager
 	instance_create_depth(0, 0, depth, Obj_Battle);
 	
+	//Create the characters in battle
 	for(var i = 0; i < 4; i++;)
 	{
 		if global.char[i] != noone

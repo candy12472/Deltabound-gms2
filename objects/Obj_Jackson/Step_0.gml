@@ -6,7 +6,6 @@ image_index = star_currExpress;
 //Initiate Expression Behaviour
 switch(star_currExpress)
 {
-	
 	//Cycle through expressions based on enum definitions
 	case star_Express.normal:
 	{
