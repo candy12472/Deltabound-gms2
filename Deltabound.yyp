@@ -60,9 +60,7 @@
     {"id":{"name":"Spr_JemonIdle","path":"sprites/Spr_JemonIdle/Spr_JemonIdle.yy",},"order":0,},
     {"id":{"name":"Scr_BattleEnd","path":"scripts/Scr_BattleEnd/Scr_BattleEnd.yy",},"order":2,},
     {"id":{"name":"Spr_NPC2","path":"sprites/Spr_NPC2/Spr_NPC2.yy",},"order":5,},
-    {"id":{"name":"Roo_Error","path":"rooms/Roo_Error/Roo_Error.yy",},"order":1,},
     {"id":{"name":"Spr_ShopBG1","path":"sprites/Spr_ShopBG1/Spr_ShopBG1.yy",},"order":3,},
-    {"id":{"name":"Obj_ErrorScreen","path":"objects/Obj_ErrorScreen/Obj_ErrorScreen.yy",},"order":3,},
     {"id":{"name":"Snd_MenuMove","path":"sounds/Snd_MenuMove/Snd_MenuMove.yy",},"order":5,},
     {"id":{"name":"Obj_NpcRoom","path":"objects/Obj_NpcRoom/Obj_NpcRoom.yy",},"order":5,},
     {"id":{"name":"Spr_WelcomeSign","path":"sprites/Spr_WelcomeSign/Spr_WelcomeSign.yy",},"order":4,},
@@ -146,7 +144,6 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Roo_Test","path":"rooms/Roo_Test/Roo_Test.yy",},},
-    {"roomId":{"name":"Roo_Error","path":"rooms/Roo_Error/Roo_Error.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":67,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

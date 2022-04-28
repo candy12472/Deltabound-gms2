@@ -24,4 +24,5 @@ global.songPlaying = false;
 //-----Battle Start-Up
 global.charNumber = 2;
 global.battle = false;
+global.party = [0, 1, 2];
 global.char = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, noone]

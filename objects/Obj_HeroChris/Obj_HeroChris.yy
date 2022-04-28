@@ -28,7 +28,16 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"turn_action","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sprite_index","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_health","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_pp","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_target_health","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_str","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_magic","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"char_def","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"objectId":{"name":"Obj_Par_Hero","path":"objects/Obj_Par_Hero/Obj_Par_Hero.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Battle",
     "path": "folders/Objects/Battle.yy",
