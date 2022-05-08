@@ -10,6 +10,6 @@ function CleanUpText(func_start)
 {
 	for(var i = func_start; i < 999 - func_start; i++;)
 	{
-		global.text[i] = -4;
+		text[i] = -4;
 	}
 }

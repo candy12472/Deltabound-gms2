@@ -18,13 +18,28 @@ function BattleSelectAction()
 	if keyboard_check_pressed(ord("Z"))
 	{
 		audio_play_sound(Snd_Select, 0, false);
+		
+		global.char[charTurn].state = select + 2;
 		global.char[charTurn].turn_action = select;
-		show_debug_message(select);
-		//Go to next turn
-		if charTurn < global.charNumber
-			charTurn += 1;
-		else //Go to next state
-			state = ExecuteBattleActions;		
+		global.char[charTurn].image_index = 0;
+		
+		if select = 2
+		{
+			state = ItemBattle;
+		}
+		else
+		{
+			//Go to next turn
+			if charTurn < global.charNumber
+			{
+				charTurn += 1;
+				select = 0;
+			}
+			else //Go to next state
+			{
+				state = ExecuteBattleActions;	
+			}
+		}
 	}
 	
 	//Go to previous turn
@@ -32,7 +47,11 @@ function BattleSelectAction()
 	{
 		audio_play_sound(Snd_Select, 0, false);
 		if charTurn > 0
+		{
 			charTurn -= 1;
+			global.char[charTurn].state = states.idle;
+			global.char[charTurn].image_index = 0;
+		}
 	}
 	
 	//-----Select Hand
@@ -56,19 +75,29 @@ function ExecuteBattleActions(){
 			action = "";
 			switch (global.char[i].turn_action){
 			case 0:
-			action = "Swing";
+			{
+				action = "Swing";
+			}
 			break;
 			case 1:
-			action = "Actions";
+			{
+				action = "Actions";
+			}
 			break;
 			case 2:
-			action = "Items";
+			{
+				action = "Items";
+			}
 			break;
 			case 3:
-			action = "Spare";
+			{
+				action = "Spare";
+			}
 			break;
 			case 4:
-			action = "Defend";
+			{
+				action = "Defend";
+			}
 			break;
 			default:
 			break;
@@ -84,7 +113,19 @@ function BattleEnemyAttack()
 {
 	charTurn = 0;
 	state = BattleSelectAction;
+	
+	for(var i = 0; i < array_length(global.party); i++;)
+		global.char[i].state = states.idle;
 }
 
-
-
+function ItemBattle()
+{
+	if(yDraw[charTurn] < 243)
+		yDraw[charTurn] = lerp(yDraw[global.charNumber], 245, 0.3);
+	
+	if keyboard_check_pressed(ord("X"))
+	{
+		select = 0;
+		state = BattleSelectAction;
+	}
+}

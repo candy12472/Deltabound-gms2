@@ -1,8 +1,8 @@
 //Go to hero battle position
 if global.battle = true
 {
-	x = lerp(x, xPos, 0.2);
-	y = lerp(y, yPos, 0.2);
+	x = lerp(x, global.heroX[character], 0.2);
+	y = lerp(y, global.heroY[character], 0.2);
 	if (image_alpha < 1) image_alpha += 0.07;
 }
 else
@@ -28,7 +28,7 @@ if global.hp[character] <= 0
 //Shake effect when getting hit
 if shakeValue > 0
 {
-	x = random_range(xPos - shakeValue, xPos + shakeValue)
+	x = random_range(global.heroX[character] - shakeValue, global.heroX[character] + shakeValue)
 	shakeValue -= 0.1;
 }
 
@@ -58,30 +58,56 @@ switch(state)
 	case states.idle:
 	{
 		sprite_index = idleSprite;
+		
+		image_speed = 1;
 	}
 	break;
 	
 	case states.bash:
 	{
 		sprite_index = attackSprite;
+		
+		if attackReady = false
+		{
+			image_speed = 0;
+		}
+		else
+		{
+			image_speed = 1
+		}
 	}
 	break;
 	
 	case states.act:
 	{
 		sprite_index = actSprite;
+		
+		if image_index >= image_number - 1
+		{
+			image_speed = 0;
+		}
 	}
 	break;
 	
 	case states.item:
 	{
 		sprite_index = itemSprite;
+		
+		if image_index >= 4
+		{
+			image_index = 0;
+		}
 	}
 	break;
 	
 	case states.defend:
 	{
 		sprite_index = defendSprite;
+		
+		if image_index >= image_number - 1
+		{
+			image_speed = 0;
+		}
 	}
 	break;
 	
@@ -103,6 +129,8 @@ switch(state)
 	case states.down:
 	{
 		sprite_index = defeatSprite;
+		
+		image_speed = 0;
 	}
 	break;
 }

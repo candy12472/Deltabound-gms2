@@ -3,8 +3,8 @@ function PlayerAnimateSprite() {
 	
 	//Get Direction and Total Frames of Spritesheet
 	// updated it to include 8 directions
-	var temp_CardinalDir = round(direction / 90);
-	var temp_TotalFrames = sprite_get_number(sprite_index) / 4;
+	var temp_CardinalDir = round(direction / 45);
+	var temp_TotalFrames = sprite_get_number(sprite_index) / 8;
 	
 	//Find Correct Frame
 	image_index = star_LocalFrame + (temp_CardinalDir * temp_TotalFrames)

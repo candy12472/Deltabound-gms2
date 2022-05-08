@@ -10,7 +10,7 @@ function DynaState() {
 	state = pointer_null;
 	
 	//Decide which state should be executed
-	if !instance_exists(Obj_Textbox) && !instance_exists(Obj_Pause) && !instance_exists(Obj_Battle) && !place_meeting(x, y, Obj_Par_Enemy) state = PlayerStateFree;
+	if !instance_exists(Obj_Textbox) && !instance_exists(Obj_Battle) && !place_meeting(x, y, Obj_Par_Enemy) state = PlayerStateFree;
 	else state = PlayerStateStall;
 
 	//Execute State
@@ -39,6 +39,19 @@ function PlayerStateFree() {
 	}
 	else sprite_index = star_PlayerIdle;
 	if(temp_OldSprite != sprite_index) star_LocalFrame = 0;
+	
+	//Party follow
+	if x != xprevious or y != yprevious
+	{
+		for(var i = arraySize - 1; i > 0; i--;)
+		{
+			followX[i] = followX[i - 1];
+			followY[i] = followY[i - 1];
+		}
+	
+		followX[0] = x;
+		followY[0] = y;
+	}
 
 	//Update Image Index
 	PlayerAnimateSprite();

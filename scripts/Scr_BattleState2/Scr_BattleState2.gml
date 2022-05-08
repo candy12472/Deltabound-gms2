@@ -80,4 +80,6 @@ function BattleEnemyAttack()
 	
 	if !instance_exists(Obj_BattleArea)
 		instance_create_depth(160, 80, depth, Obj_BattleArea);
-}*/
+}
+
+*/

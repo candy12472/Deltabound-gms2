@@ -24,3 +24,12 @@ star_InteractObj = Obj_Par_Interact;
 
 //State
 star_State = DynaState;
+
+//Party Follow Chris
+arraySize = 100;
+
+for(var i = arraySize - 1; i >= 0; i--;)
+{
+	followX[i] = x;
+	followY[i] = y;
+}

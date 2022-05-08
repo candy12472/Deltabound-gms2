@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -10,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Snd_Text.ogg",
-  "duration": 0.07602,
+  "soundFile": "Snd_Text.wav",
+  "duration": 1.714286,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

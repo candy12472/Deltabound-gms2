@@ -16,8 +16,8 @@ if place_meeting(x, y, Obj_Player) && global.battle = false
 //Go to enemy position if the battle starts
 if global.battle = true && alarm[0] = -1 && inBattle = true
 {
-	x = lerp(x, 256, 0.2)
-	y = lerp(y, 96, 0.2)
+	x = lerp(x, global.monsterX[0], 0.2)
+	y = lerp(y, global.monsterY[0], 0.2)
 }
 
 if !audio_is_playing(Snd_SlashBig) && playSong = true && global.songPlaying = false

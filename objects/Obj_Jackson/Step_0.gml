@@ -1,7 +1,7 @@
 /// @desc last edited by LunaticWyrm467
 //---------------Per Frame
 //-----Define Current Expression
-image_index = star_currExpress;
+//image_index = star_currExpress;
 
 //Initiate Expression Behaviour
 switch(star_currExpress)

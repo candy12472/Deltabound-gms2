@@ -26,9 +26,9 @@
   ],
   "properties": [
     {"varType":2,"value":"battle.ogg","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"mus","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"Spr_JemonHurt","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"alertSprite","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"Spr_JemonIdle","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"idleSprite","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"Spr_JemonBattle","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"battleSprite","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"Spr_Dummy","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"alertSprite","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"Spr_Dummy","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"idleSprite","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"Spr_Dummy","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"battleSprite","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
