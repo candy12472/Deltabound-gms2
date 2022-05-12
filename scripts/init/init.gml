@@ -19,6 +19,8 @@ global.battle = false;
 global.party = [0, 1, 2];
 global.char = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, Obj_HeroNoella]
 
+global.atType = 0;
+
 //Positions for heros and monsters
 global.heroX = [64, 32, 32];
 global.heroY = [96, 64, 128];

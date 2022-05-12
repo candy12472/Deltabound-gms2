@@ -1,8 +1,7 @@
 //Go to hero battle position
 if global.battle = true
 {
-	x = lerp(x, global.heroX[character], 0.2);
-	y = lerp(y, global.heroY[character], 0.2);
+	Scr_MoveToPoint(global.heroX[character], global.heroY[character], 5);
 	if (image_alpha < 1) image_alpha += 0.07;
 }
 else

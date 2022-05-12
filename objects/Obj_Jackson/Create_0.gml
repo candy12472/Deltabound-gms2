@@ -1,5 +1,8 @@
 /// @desc last edited by LunaticWyrm467
 //---------------Upon Creation
+//Set depth
+Scr_Depth();
+
 //-----Variable Declaration
 
 //-----Expressions

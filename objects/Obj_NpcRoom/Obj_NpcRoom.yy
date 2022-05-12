@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_Par_Interact",
-    "path": "objects/Obj_Par_Interact/Obj_Par_Interact.yy",
+    "name": "Obj_Interact",
+    "path": "objects/Obj_Interact/Obj_Interact.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

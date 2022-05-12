@@ -1,5 +1,8 @@
 /// @desc last edited by LunaticWyrm467
 //---------------Per Frame
+//Set depth
+Scr_Depth();
+
 //-----Define Current Expression
 //image_index = star_currExpress;
 

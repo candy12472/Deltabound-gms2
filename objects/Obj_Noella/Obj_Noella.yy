@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_LilJ",
-    "path": "sprites/Spr_LilJ/Spr_LilJ.yy",
+    "name": "Spr_NoeIdle",
+    "path": "sprites/Spr_NoeIdle/Spr_NoeIdle.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,7 +26,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"steps","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"60","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"steps","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"45","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"idleSprite","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"Spr_NoeIdle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Entities",

@@ -1,5 +1,8 @@
 /// @desc last edited by LunaticWyrm467
 //---------------Per Frame
+//Set depth
+Scr_Depth();
+
 //-----Controls
 //Input Mapping
 var control_Esc = keyboard_check(vk_escape);

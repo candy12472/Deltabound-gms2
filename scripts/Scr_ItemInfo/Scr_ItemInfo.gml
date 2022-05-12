@@ -24,17 +24,17 @@ function Scr_ItemInfo(_itemID)
 		break;
 		case 3:
 			itemNameB = "Easter Egg"
-			itemDescB = "The only easter egg you'll find here. \n Heals 75HP"
+			itemDescB = "The only easter egg you'll find here. \nHeals 75HP"
 			itemValueB = 0;
 		break;
 		case 4:
 			itemNameB = "Kids' Mojito"
-			itemDescB = "A popular summer drink. \n Heals 50HP"
+			itemDescB = "A popular summer drink. \nHeals 50HP"
 			itemValueB = 0;
 		break;
 		case 5:
 			itemNameB = "Onigiri"
-			itemDescB = "A jelly donut. \n Heals 70HP"
+			itemDescB = "A jelly donut. \nHeals 70HP"
 			itemValueB = 0;
 		break;
 	}

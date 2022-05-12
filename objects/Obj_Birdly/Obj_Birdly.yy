@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_LilJ",
-    "path": "sprites/Spr_LilJ/Spr_LilJ.yy",
+    "name": "Spr_BirdIdle",
+    "path": "sprites/Spr_BirdIdle/Spr_BirdIdle.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,10 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"idleSprite","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"Spr_BirdIdle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"walkSprite","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"Spr_BirdWalk","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Entities",
     "path": "folders/Objects/Entities.yy",

@@ -4,21 +4,15 @@ charTurn = 0;
 switch(global.charNumber)
 {
 	case 0:
-	{
 		xDraw = [159, 0, 0]
-	}
 	break;
 	
 	case 1:
-	{
 		xDraw = [126, 215, 0]
-	}
 	break;
 	
 	case 2:
-	{
 		xDraw = [70, 159, 248]
-	}
 	break;
 }
 
@@ -27,6 +21,7 @@ yDraw = [243, 243, 243]
 //Hand select variables
 select = 0;
 lSelect = 0;
+
 xx = 104;
 yy = 185;
 
@@ -37,3 +32,7 @@ areaAngle = 180;
 
 //Battle state
 state = BattleSelectAction;
+
+//Yet another x and y variables for ui
+_x = 2;
+_y = 2;

@@ -47,10 +47,12 @@ function PlayerStateFree() {
 		{
 			followX[i] = followX[i - 1];
 			followY[i] = followY[i - 1];
+			followDir[i] = followDir[i - 1];
 		}
 	
 		followX[0] = x;
 		followY[0] = y;
+		followDir[0] = direction;
 	}
 
 	//Update Image Index

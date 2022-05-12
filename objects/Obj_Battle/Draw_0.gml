@@ -12,8 +12,9 @@ if charTurn != -1 && global.songPlaying = true && state != ItemBattle
 
 if state = ItemBattle
 {
-	draw_sprite(Spr_ItemBox, 0, 2, 2);
+	draw_sprite(Spr_ItemBox, 0, _x, _y);
 	draw_sprite(Spr_Items, global.item[0], 9, 6);
+	draw_sprite(Spr_CharItemBox, global.party[charTurn], 68, 65);
 	draw_text(45, 6, global.itemDesc[0]);
 	
 	draw_set_font(Fnt_Main);

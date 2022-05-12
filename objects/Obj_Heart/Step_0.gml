@@ -24,13 +24,9 @@ if place_meeting(x, y + moveY, Obj_BattleArea)
 
 //Heart flickering effect
 if cooldown > 0
-{
 	visible = !visible;
-}
 else if cooldown <= 0
-{
 	visible = true
-}
 
 //Apply movement
 x += moveX;

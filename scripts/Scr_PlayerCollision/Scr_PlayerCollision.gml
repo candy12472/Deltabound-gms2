@@ -6,14 +6,12 @@ function PlayerCollision()
 	
 	//-----Horizontal Tiles
 	//Collision
-	if(tilemap_get_at_pixel(star_ColMap, x + star_xSpeed, y))
+	if place_meeting(x + star_xSpeed, y, Obj_Collision)
 	{
 		/*
 		Check if Player intercepted Collision Bounds horizontally
 		by checking player's position in accordance to the size of a tile.
 		*/
-		x -= x mod TILE_SIZE;
-		if(sign(star_xSpeed) == 1) x += TILE_SIZE - 1;
 		star_xSpeed = 0;
 		temp_Col = true;
 	}
@@ -23,14 +21,12 @@ function PlayerCollision()
 	
 	//-----Vertical Tiles
 	//Collision
-	if(tilemap_get_at_pixel(star_ColMap, x, y + star_ySpeed))
+	if place_meeting(x, y + star_ySpeed, Obj_Collision)
 	{
 		/*
 		Check if Player intercepted Collision Bounds vertically
 		by checking player's position in accordance to the size of a tile.
 		*/
-		y -= y mod TILE_SIZE;
-		if(sign(star_ySpeed) == 1) y += TILE_SIZE - 1;
 		star_ySpeed = 0;
 		temp_Col = true;
 	}
