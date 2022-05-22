@@ -6,7 +6,7 @@ function Scr_GetDialogue(txtID)
 	{
 		case "Block":
 		{
-			Scr_Text("This is a \\cY test message");
+			Scr_Text(Scr_StringGetLoc("This is a \\cY test message", "Scr_GetDialogue_slash_gml_9_0"));
 		}break;
 	}
 }
