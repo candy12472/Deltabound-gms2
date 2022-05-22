@@ -4,8 +4,7 @@ function PlayerCollision()
 	//Define if a Collision has occured
 	var temp_Col = false;
 	
-	//-----Horizontal Tiles
-	//Collision
+	//-----Horizontal Collision
 	if place_meeting(x + star_xSpeed, y, Obj_Collision)
 	{
 		/*

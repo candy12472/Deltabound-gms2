@@ -1,39 +1,140 @@
-var keyInteract = keyboard_check_pressed(ord("Z"))
-var keySkip = keyboard_check(ord("X"))
-var keyFast = keyboard_check(ord("C"))
+var interactKey = keyboard_check_pressed(ord("Z"));
+var skipKey = keyboard_check_pressed(ord("X"));
 
 if start = false
 {
 	start = true;
 	
-	for(var i = 0; i < array_length(global.text); i++;)
+	for(var p = 0; p < pageNumber; p++;)
 	{
-		length[i] = string_length(global.text[i]);
+		textLength[p] = string_length(text[p]);
+		
+		if face[p] = -1
+			textXOffset[p] = 0;
+		else
+			textXOffset[p] = 64;
+		
+		for(var c = 0; c < textLength[p]; c++;)
+		{
+			var charPos = c + 1;
+			var getChar = string_char_at(text[p], charPos);
+			var nextChar = string_char_at(text[p], charPos + 1);
+			var nextChar2 = string_char_at(text[p], charPos + 2);
+			
+			if getChar = "\\"
+			{
+				if nextChar = "c"
+				{
+					text[p] = string_delete(text[p], charPos, 4)
+					
+					colorChange = true;
+					var charCol = -1;
+					
+					switch(nextChar2)
+					{
+						case "R":
+							charCol = c_red;
+						break;
+						case "G":
+							charCol = c_green;
+						break;
+						case "B":
+							charCol = c_blue;
+						break;
+						case "Y":
+							charCol = c_yellow;
+						break;
+						case "W":
+							charCol = c_white;
+						break;
+						case "b":
+							charCol = c_black;
+						break;
+						case "O":
+							charCol = c_orange;
+						break;
+					}
+				}
+			}
+			
+			char[c, p] = string_char_at(text[p], charPos);
+			
+			var txtUpToChar = string_copy(text[p], 1, charPos);
+			var txtWidth = string_width(txtUpToChar) - string_width(char[c, p]);
+			
+			if char[c, p] == " "
+				lastFreeSpace = charPos + 1;
+			
+			if txtWidth - lineBreakOffset[p] > textWidth
+			{
+				lineBreakPos[lineBreakNum[p], p] = lastFreeSpace;
+				lineBreakNum[p]++;
+				
+				var txtUpToLastSpace = string_copy(text[p], 1, lastFreeSpace);
+				var lastFreeSpaceStr = string_char_at(text[p], lastFreeSpace);
+				
+				lineBreakOffset[p] = string_width(txtUpToLastSpace) - string_width(lastFreeSpaceStr);
+			}
+			
+			if colorChange = true
+				charColor[c, p] = charCol;
+			else
+				charColor[c, p] = c_white;
+			
+		}
+		
+		for(var c = 0; c < textLength[p]; c++;)
+		{
+			var charPos = c + 1;
+			
+			var txtUpToChar = string_copy(text[p], 1, charPos);
+			var txtWidth = string_width(txtUpToChar) - string_width(char[c, p]);
+			
+			textX = Scr_CameraGet(0 << 0, 0) + textboxX + 16 + textXOffset[p];
+			textY = Scr_CameraGet(1 << 0, 0) + textboxY + 12;
+			
+			var txtLine = 0;
+			
+			for(var lb = 0; lb < lineBreakNum[p]; lb++;)
+			{
+				if charPos >= lineBreakPos[lb, p]
+				{
+					var strCopy = string_copy(text[p], lineBreakPos[lb, p], charPos - lineBreakPos[lb, p]);
+					txtWidth = string_width(strCopy);
+					
+					txtLine = lb + 1;
+				}
+			}
+			
+			charX[c, p] = textX + txtWidth;
+			charY[c, p] = textY + txtLine * textSep;
+		}
 	}
 }
 
-if char < length[global.txtNum]
+if drawChar <= textLength[page]
 {
-	char += 0.5;
-	audio_play_sound(Snd_Text, 0, false);
+	drawChar += textSpeed;
+	drawChar = clamp(drawChar, 0, textLength[page]);
 }
 
-if keyInteract && char >= length[global.txtNum]
+if interactKey
 {
-	if global.text[global.txtNum + 1] != ""
+	if drawChar = textLength[page]
 	{
-		global.txtNum++;
-		char = 0;
-	}
-	else if global.text[global.txtNum + 1] == ""
-	{
-		instance_destroy();
-		global.txtNum = 0;
+		if page < pageNumber - 1
+		{
+			page++;
+			Scr_TextType(typer[page]);
+			colorChange = false;
+			drawChar = 0;
+		}
+		else
+		{
+			instance_destroy();
+		}
 	}
 }
 
-if keySkip
-	char = length[global.txtNum]
-
-if keyFast
-	global.txtNum++;
+if skipKey
+	drawChar = textLength[page]

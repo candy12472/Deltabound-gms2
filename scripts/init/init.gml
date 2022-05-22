@@ -1,11 +1,4 @@
 //---------------Initiation Script
-//-----Dialogue Start-Up
-//Current Dialogue Page Count
-global.txtNum = 0;
-
-//Textbox flavor
-global.flavor = 0;
-
 global.flag = array_create(999, 0)
 global.debug = false;
 
@@ -18,8 +11,6 @@ global.charNumber = 2;
 global.battle = false;
 global.party = [0, 1, 2];
 global.char = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, Obj_HeroNoella]
-
-global.atType = 0;
 
 //Positions for heros and monsters
 global.heroX = [64, 32, 32];
@@ -43,4 +34,10 @@ for(var i = 0; i < 14; i += 1;)
 
 global.item[0] = 3;
 
-Scr_ItemInfoAll()
+Scr_ItemInfoAll();
+
+//Languages
+global.lang = "en";
+global.langMap = ds_map_create();
+
+Scr_LangLoad();

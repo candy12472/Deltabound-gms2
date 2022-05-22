@@ -26,17 +26,17 @@ if control_Restart game_restart()
 //Dialogue System
 if keyboard_check_pressed(ord("Z"))
 {
-	var dirX = lengthdir_x(15, direction)
-	var dirY = lengthdir_y(15, direction)
+	kin_InteractCol[0] = collision_line(x, y, x + lengthdir_x(20, direction + 15), y + lengthdir_y(20, direction + 15), Obj_Interact, false, false);
+	kin_InteractCol[1] = collision_line(x, y, x + lengthdir_x(20, direction - 15), y + lengthdir_y(20, direction - 15), Obj_Interact, false, false);
+	kin_InteractCol[2] = collision_line(x, y, x + lengthdir_x(20, direction), y + lengthdir_y(20, direction), Obj_Interact, false, false);
 	
-	kin_InteractCol = collision_line(x, y, x + dirX, y + dirY, star_InteractObj, false, false);
-	
-	if kin_InteractCol != noone && !instance_exists(Obj_Textbox)
+	for(var i = 0; i <= 2; i++;)
 	{
-		instance_create_layer(0, 0, layer, Obj_Textbox);
-		
-		with(kin_InteractCol)
-			event_user(0);
+		if kin_InteractCol[i] != noone && !instance_exists(Obj_Textbox)
+		{
+			with(kin_InteractCol[i])
+				event_user(0);
+		}
 	}
 }
 

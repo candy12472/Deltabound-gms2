@@ -1,5 +1,17 @@
-draw_sprite_ext(Spr_Textbox, 0, room_width / 2, (room_height / 1.1) - 26, 1, 1, 0, c_white, 1);
+if face[page] = -1
+{
+	draw_sprite(Spr_Textbox, 0, textboxX, textboxY);
+}
+else
+{
+	draw_sprite(Spr_TextboxFace, 0, textboxX, textboxY);
+	draw_sprite(faceSprite, face[page], faceX, faceY);
+}
 
-draw_text_ext(28, 164, string_copy(global.text[global.txtNum], 1, char), sep, textWidth);
+for(var c = 0; c < drawChar; c++;)
+{
+	draw_set_color(charColor[c, page])
+	draw_text(charX[c, page], charY[c, page], char[c, page]);
+}
 
-draw_set_font(Fnt_Main);
+draw_set_font(font);
