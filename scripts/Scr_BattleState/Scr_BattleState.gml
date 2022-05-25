@@ -37,6 +37,8 @@ function BattleSelectAction()
 			}
 			else //Go to next state
 			{
+				charTurn = 0;
+				count = 0;
 				state = ExecuteBattleActions;	
 			}
 		}
@@ -71,32 +73,36 @@ function ExecuteBattleActions(){
 	if(yDraw[global.charNumber] < 243){
 		yDraw[global.charNumber] = lerp(yDraw[global.charNumber], 245, 0.3);
 	}else{
-		for (i = 0; i < array_length(global.party); i++){
 			action = "";
-			switch (global.char[i].turn_action){
+			switch (global.char[charTurn].turn_action){
 			case 0:
 			{
 				action = "Swing";
+				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 1:
 			{
 				action = "Actions";
+				global.char[charTurn].image_index = 0;
 			}
 			break;
 			case 2:
 			{
 				action = "Items";
+				global.char[charTurn].image_index = 0;
 			}
 			break;
 			case 3:
 			{
 				action = "Spare";
+				global.char[charTurn].image_index = 0;
 			}
 			break;
 			case 4:
 			{
 				action = "Defend";
+				global.char[charTurn].image_index = 0;
 			}
 			break;
 			default:
@@ -104,18 +110,25 @@ function ExecuteBattleActions(){
 			}
 			
 			show_debug_message(action);
+		//Go to next turn
+		if(global.char[charTurn].image_index >= global.char[charTurn].image_number-1){
+			global.char[charTurn].state = states.idle;
+			global.char[charTurn].attackReady = false;
+			charTurn++;
 		}
-		state = BattleEnemyAttack;
+		if charTurn >= global.charNumber
+		{
+			state = BattleEnemyAttack;	
+		}
 	}
 }
 
 function BattleEnemyAttack()
 {
 	charTurn = 0;
-	state = BattleSelectAction;
-	
 	for(var i = 0; i < array_length(global.party); i++;)
 		global.char[i].state = states.idle;
+	state = BattleSelectAction;
 }
 
 function ItemBattle()

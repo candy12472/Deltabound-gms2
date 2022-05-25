@@ -70,6 +70,7 @@
     {"id":{"name":"Spr_ToshSurprise","path":"sprites/Spr_ToshSurprise/Spr_ToshSurprise.yy",},"order":11,},
     {"id":{"name":"Scr_MoveToPoint","path":"scripts/Scr_MoveToPoint/Scr_MoveToPoint.yy",},"order":4,},
     {"id":{"name":"Spr_Numbers","path":"sprites/Spr_Numbers/Spr_Numbers.yy",},"order":6,},
+    {"id":{"name":"Battle_Test","path":"rooms/Battle_Test/Battle_Test.yy",},"order":1,},
     {"id":{"name":"Spr_Deltaweeb","path":"sprites/Spr_Deltaweeb/Spr_Deltaweeb.yy",},"order":0,},
     {"id":{"name":"Spr_ChrisAttack","path":"sprites/Spr_ChrisAttack/Spr_ChrisAttack.yy",},"order":1,},
     {"id":{"name":"Spr_BirdlyHurt","path":"sprites/Spr_BirdlyHurt/Spr_BirdlyHurt.yy",},"order":6,},
@@ -172,6 +173,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Battle_Test","path":"rooms/Battle_Test/Battle_Test.yy",},},
     {"roomId":{"name":"Roo_Test","path":"rooms/Roo_Test/Roo_Test.yy",},},
   ],
   "Folders": [
