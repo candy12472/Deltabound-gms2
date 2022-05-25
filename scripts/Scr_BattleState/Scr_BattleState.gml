@@ -84,25 +84,25 @@ function ExecuteBattleActions(){
 			case 1:
 			{
 				action = "Actions";
-				global.char[charTurn].image_index = 0;
+				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 2:
 			{
 				action = "Items";
-				global.char[charTurn].image_index = 0;
+				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 3:
 			{
 				action = "Spare";
-				global.char[charTurn].image_index = 0;
+				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 4:
 			{
 				action = "Defend";
-				global.char[charTurn].image_index = 0;
+				global.char[charTurn].attackReady = true;
 			}
 			break;
 			default:
