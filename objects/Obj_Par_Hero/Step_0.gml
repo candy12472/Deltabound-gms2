@@ -81,6 +81,15 @@ switch(state)
 	{
 		sprite_index = actSprite;
 		
+		if attackReady = false
+		{
+			image_speed = 0;
+		}
+		else
+		{
+			image_speed = 1;
+		}
+		
 		if image_index >= image_number - 1
 		{
 			image_speed = 0;
@@ -92,7 +101,7 @@ switch(state)
 	{
 		sprite_index = itemSprite;
 		
-		if image_index >= 4
+		if image_index >= image_number - 1
 		{
 			image_index = 0;
 		}

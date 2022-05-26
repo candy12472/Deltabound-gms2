@@ -22,7 +22,7 @@ function BattleSelectAction()
 		global.char[charTurn].state = select + 2;
 		global.char[charTurn].turn_action = select;
 		global.char[charTurn].image_index = 0;
-		
+		global.char[charTurn].attackReady = false;
 		if select = 2
 		{
 			state = ItemBattle;
@@ -90,19 +90,16 @@ function ExecuteBattleActions(){
 			case 2:
 			{
 				action = "Items";
-				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 3:
 			{
 				action = "Spare";
-				global.char[charTurn].attackReady = true;
 			}
 			break;
 			case 4:
 			{
 				action = "Defend";
-				global.char[charTurn].attackReady = true;
 			}
 			break;
 			default:
@@ -135,7 +132,13 @@ function ItemBattle()
 {
 	if(yDraw[charTurn] < 243)
 		yDraw[charTurn] = lerp(yDraw[global.charNumber], 245, 0.3);
-	
+	itemSelect = 0;
+	if keyboard_check_pressed(ord("Z"))
+	{
+		itemSelect = select;
+		state = BattleSelectAction;
+		select = 0;
+	}
 	if keyboard_check_pressed(ord("X"))
 	{
 		select = 0;
