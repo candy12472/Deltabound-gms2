@@ -5,12 +5,16 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "Spr_PlayerIdle",
     "path": "sprites/Spr_PlayerIdle/Spr_PlayerIdle.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_Par_World",
+    "path": "objects/Obj_Par_World/Obj_Par_World.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
