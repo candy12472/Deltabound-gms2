@@ -5,12 +5,11 @@
   },
   "solid": false,
   "visible": true,
-  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_Par_World",
-    "path": "objects/Obj_Par_World/Obj_Par_World.yy",
+    "name": "Obj_Par_Enemy",
+    "path": "objects/Obj_Par_Enemy/Obj_Par_Enemy.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
