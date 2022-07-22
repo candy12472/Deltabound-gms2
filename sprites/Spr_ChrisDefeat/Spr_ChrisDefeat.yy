@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 7,
-  "bbox_right": 40,
-  "bbox_top": 11,
-  "bbox_bottom": 41,
+  "bbox_left": 0,
+  "bbox_right": 49,
+  "bbox_top": 0,
+  "bbox_bottom": 39,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 48,
-  "height": 48,
+  "width": 50,
+  "height": 40,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,24 +24,56 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"77aeadda-a1d6-412f-86e0-bef65ab1d50c","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"77aeadda-a1d6-412f-86e0-bef65ab1d50c","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"90fb053f-55a7-4cb9-af34-7c6f4ce6869e","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"77aeadda-a1d6-412f-86e0-bef65ab1d50c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"496b7afb-f702-4133-b1aa-273e45b4d5ba","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"496b7afb-f702-4133-b1aa-273e45b4d5ba","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"496b7afb-f702-4133-b1aa-273e45b4d5ba","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"67bd4e1d-615f-472d-b9bb-b8cab90d414e","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"67bd4e1d-615f-472d-b9bb-b8cab90d414e","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"67bd4e1d-615f-472d-b9bb-b8cab90d414e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"efe86498-7851-41d9-9705-a583f3abedec","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"efe86498-7851-41d9-9705-a583f3abedec","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"efe86498-7851-41d9-9705-a583f3abedec","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"75c7e255-ab75-4a61-ae37-cbd007c82d79","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"75c7e255-ab75-4a61-ae37-cbd007c82d79","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"75c7e255-ab75-4a61-ae37-cbd007c82d79","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8bd29bc2-3ea2-4112-9e71-4553fadf2ad9","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8bd29bc2-3ea2-4112-9e71-4553fadf2ad9","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"8bd29bc2-3ea2-4112-9e71-4553fadf2ad9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"df49d4cb-6d40-4caa-82ab-5266c794eae7","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"df49d4cb-6d40-4caa-82ab-5266c794eae7","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"df49d4cb-6d40-4caa-82ab-5266c794eae7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"17afbf24-8b71-4d3a-a1bc-1d04cf8627f5","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"17afbf24-8b71-4d3a-a1bc-1d04cf8627f5","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"17afbf24-8b71-4d3a-a1bc-1d04cf8627f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"48cf3b82-7288-427b-9487-2748d7d26652","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"48cf3b82-7288-427b-9487-2748d7d26652","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"48cf3b82-7288-427b-9487-2748d7d26652","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"15571a4f-051e-4499-90b8-f2ca507264ed","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"15571a4f-051e-4499-90b8-f2ca507264ed","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"LayerId":{"name":"e21eab7d-7541-4098-b836-9f113aac066f","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","name":"15571a4f-051e-4499-90b8-f2ca507264ed","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 9.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e9c779fb-3115-4a37-a77c-876d691b8ac1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77aeadda-a1d6-412f-86e0-bef65ab1d50c","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"911a18c0-8508-4cba-a68f-81faa8f09e7b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"496b7afb-f702-4133-b1aa-273e45b4d5ba","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8e65f32c-0d32-423e-8a9b-a41dec2cc200","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67bd4e1d-615f-472d-b9bb-b8cab90d414e","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5334b5ba-9af6-41f1-b704-3e7734b2fa26","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"efe86498-7851-41d9-9705-a583f3abedec","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c8b796e8-a813-4729-a35b-3ac2b74dfd3a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75c7e255-ab75-4a61-ae37-cbd007c82d79","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"22720a78-024a-49cb-a3c9-578006efe8a0","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8bd29bc2-3ea2-4112-9e71-4553fadf2ad9","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"546a0549-0081-410c-813a-8dfe2c92ddf8","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df49d4cb-6d40-4caa-82ab-5266c794eae7","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a2d5fe3-ebd4-479e-8ea6-468d38b9a162","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"17afbf24-8b71-4d3a-a1bc-1d04cf8627f5","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"df860dee-394b-4d02-93af-97a0717adeae","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48cf3b82-7288-427b-9487-2748d7d26652","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"057afeed-78f1-4134-8bb3-c2227b433c38","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15571a4f-051e-4499-90b8-f2ca507264ed","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +86,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 24,
-    "yorigin": 42,
+    "xorigin": 21,
+    "yorigin": 38,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_ChrisDefeat","path":"sprites/Spr_ChrisDefeat/Spr_ChrisDefeat.yy",},
@@ -65,7 +97,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"90fb053f-55a7-4cb9-af34-7c6f4ce6869e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e21eab7d-7541-4098-b836-9f113aac066f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -3,26 +3,28 @@ function BattleSelectAction()
 {
 	//-----Character UI
 	//Set selected character UI in the active position
-	yDraw[charTurn] = lerp(yDraw[charTurn], 181, 0.3);
+	yDraw[charTurn] = lerp(yDraw[charTurn], selPos, 0.3);
 	
 	//Set character UI in the idle position if not selected
 	if charTurn > 0
 	{
-		yDraw[charTurn - 1] = lerp(yDraw[charTurn - 1], 243, 0.3);
+		yDraw[charTurn - 1] = lerp(yDraw[charTurn - 1], idlePos, 0.3);
 	}
 	if charTurn < 2
 	{
-		yDraw[charTurn + 1] = lerp(yDraw[charTurn + 1], 243, 0.3);
+		yDraw[charTurn + 1] = lerp(yDraw[charTurn + 1], idlePos, 0.3);
 	}
 	
 	if keyboard_check_pressed(ord("Z"))
 	{
 		audio_play_sound(Snd_Select, 0, false);
 		
-		global.char[charTurn].state = select + 2;
-		global.char[charTurn].turn_action = select;
-		global.char[charTurn].image_index = 0;
-		global.char[charTurn].attackReady = false;
+		global.hero[charTurn].state = select + 2;
+		global.hero[charTurn].turn_action = select;
+		global.hero[charTurn].image_index = 0;
+		global.hero[charTurn].attackReady = false;
+		global.hero[charTurn].itemReady = false;
+		
 		if select = 2
 		{
 			state = ItemBattle;
@@ -51,8 +53,8 @@ function BattleSelectAction()
 		if charTurn > 0
 		{
 			charTurn -= 1;
-			global.char[charTurn].state = states.idle;
-			global.char[charTurn].image_index = 0;
+			global.hero[charTurn].state = states.idle;
+			global.hero[charTurn].image_index = 0;
 		}
 	}
 	
@@ -71,25 +73,27 @@ function BattleSelectAction()
 
 function ExecuteBattleActions(){
 	if(yDraw[global.charNumber] < 243){
-		yDraw[global.charNumber] = lerp(yDraw[global.charNumber], 245, 0.3);
+		yDraw[global.charNumber] = lerp(yDraw[global.charNumber], idlePos, 0.3);
 	}else{
 			action = "";
-			switch (global.char[charTurn].turn_action){
+			switch (global.hero[charTurn].turn_action){
 			case 0:
 			{
 				action = "Swing";
-				global.char[charTurn].attackReady = true;
+				global.hero[charTurn].attackReady = true;
 			}
 			break;
 			case 1:
 			{
 				action = "Actions";
-				global.char[charTurn].attackReady = true;
+				global.hero[charTurn].attackReady = true;
 			}
 			break;
 			case 2:
 			{
 				action = "Items";
+				
+				global.hero[charTurn].itemReady = true;
 			}
 			break;
 			case 3:
@@ -108,39 +112,74 @@ function ExecuteBattleActions(){
 			
 			show_debug_message(action);
 		//Go to next turn
-		if(global.char[charTurn].image_index >= global.char[charTurn].image_number-1){
-			global.char[charTurn].state = states.idle;
-			global.char[charTurn].attackReady = false;
+		if(global.hero[charTurn].image_index >= global.hero[charTurn].image_number-1){
+			global.hero[charTurn].state = states.idle;
+			global.hero[charTurn].attackReady = false;
 			charTurn++;
 		}
 		if charTurn >= global.charNumber
 		{
-			state = BattleEnemyAttack;	
+			state = BattleEnemyAttack;
 		}
 	}
 }
 
 function BattleEnemyAttack()
 {
+	if(yDraw[charTurn] < 243)
+		yDraw[charTurn] = lerp(yDraw[global.charNumber], 245, 0.3);
+	
+	areaXscale = lerp(areaXscale, 1, 0.2);
+	areaYscale = lerp(areaYscale, 1, 0.2);
+	areaAngle = lerp(areaAngle, 0, 0.2);
+	
 	charTurn = 0;
+	
 	for(var i = 0; i < array_length(global.party); i++;)
-		global.char[i].state = states.idle;
-	state = BattleSelectAction;
+		global.hero[i].state = states.idle;
+	
+	bulletGen.attackID = 0;
+	bulletGen.con = 1;
+	heart.con = 1;
 }
 
 function ItemBattle()
 {
 	if(yDraw[charTurn] < 243)
 		yDraw[charTurn] = lerp(yDraw[global.charNumber], 245, 0.3);
-	itemSelect = 0;
+	
 	if keyboard_check_pressed(ord("Z"))
 	{
-		itemSelect = select;
-		state = BattleSelectAction;
-		select = 0;
+		if global.itemName[itemSelect[charTurn]] != "None"
+		{
+			global.hero[charTurn].turn_action = select;
+			
+			itemSelect[charTurn] = 0;
+			itemSelectX = 0;
+			itemSelectY = 0;
+			select = 0;
+			
+			Scr_Heal(charTurn, global.itemHP[itemSelect[charTurn]]);
+				
+			global.item[itemSelect[charTurn]] = 0;
+			Scr_ItemInfoAll();
+			
+			if charTurn < global.charNumber
+			{
+				state = BattleSelectAction;
+				charTurn++;
+			}
+			else
+			{
+				state = ExecuteBattleActions;
+			}
+		}
 	}
+	
 	if keyboard_check_pressed(ord("X"))
 	{
+		itemSelectX = 0;
+		itemSelectY = 0;
 		select = 0;
 		state = BattleSelectAction;
 	}

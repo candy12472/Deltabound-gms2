@@ -10,4 +10,5 @@ function Scr_Text(_text, _typer = 0, _face = -1)
 	text[pageNumber] = _text;
 	typer[pageNumber] = _typer;
 	pageNumber++;
+	
 }

@@ -10,5 +10,3 @@ function Scr_GetDialogue(txtID)
 		}break;
 	}
 }
-
-

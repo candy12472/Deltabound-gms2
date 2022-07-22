@@ -1,6 +1,8 @@
 var interactKey = keyboard_check_pressed(ord("Z"));
 var skipKey = keyboard_check_pressed(ord("X"));
 
+Scr_TextType(typer[page]);
+
 if start = false
 {
 	start = true;
@@ -90,8 +92,8 @@ if start = false
 			var txtUpToChar = string_copy(text[p], 1, charPos);
 			var txtWidth = string_width(txtUpToChar) - string_width(char[c, p]);
 			
-			textX = Scr_CameraGet(0 << 0, 0) + textboxX + 16 + textXOffset[p];
-			textY = Scr_CameraGet(1 << 0, 0) + textboxY + 12;
+			textX = camera_get_view_x(view_camera[0]) + textboxX + 16 + textXOffset[p];
+			textY = camera_get_view_y(view_camera[0]) + textboxY + 12;
 			
 			var txtLine = 0;
 			
@@ -116,6 +118,8 @@ if drawChar <= textLength[page]
 {
 	drawChar += textSpeed;
 	drawChar = clamp(drawChar, 0, textLength[page]);
+	
+	audio_play_sound(textSound, 0, false);
 }
 
 if interactKey

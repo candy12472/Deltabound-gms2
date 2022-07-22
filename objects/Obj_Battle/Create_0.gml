@@ -1,3 +1,5 @@
+depth = -998;
+
 charTurn = 0;
 
 //Character UI positions
@@ -16,14 +18,26 @@ switch(global.charNumber)
 	break;
 }
 
-yDraw = [243, 243, 243]
+yDraw = [248, 248, 248]
+
+idlePos = 248;
+selPos = 183;
 
 //Hand select variables
 select = 0;
 lSelect = 0;
 
+itemSelect = array_create(3, 0);
+itemSelected = 0;
+
+itemSelectX = 0;
+itemSelectY = 0;
+
+itemLSelectX = 0;
+itemLSelectY = 0;
+
 xx = 104;
-yy = 185;
+yy = 183;
 
 //Bullet hell area variables
 areaXscale = 0;
@@ -34,5 +48,11 @@ areaAngle = 180;
 state = BattleSelectAction;
 
 //Yet another x and y variables for ui
-_x = 2;
-_y = 2;
+_x = 151;
+_y = 86;
+
+if instance_exists(Obj_Player)
+{
+	with(Obj_Player)
+		canMove = false;
+}

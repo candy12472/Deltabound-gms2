@@ -1,26 +1,29 @@
-var minX = (Obj_BattleArea.x - (Obj_BattleArea.sprite_width) / 2)
-var maxX = (Obj_BattleArea.x + (Obj_BattleArea.sprite_width) / 2)
-var minY = (Obj_BattleArea.y - (Obj_BattleArea.sprite_height) / 2)
-var maxY = (Obj_BattleArea.y + (Obj_BattleArea.sprite_height) / 2)
-
-timer += 1;
-
-switch(type)
+if con = 1
 {
-	case 0:
+	var left = (Obj_BattleArea.x - (Obj_BattleArea.sprite_width) / 2)
+	var right = (Obj_BattleArea.x + (Obj_BattleArea.sprite_width) / 2)
+	var top = (Obj_BattleArea.y - (Obj_BattleArea.sprite_height) / 2)
+	var bottom = (Obj_BattleArea.y + (Obj_BattleArea.sprite_height) / 2)
+	
+	timer += 1;
+
+	switch(attackID)
 	{
-		if timer >= 60
+		case 0:
 		{
-			var alph = 0;
-			alph += 0.1;
-			timer = 0;
-			var ran = random(360);
-			var xx = lengthdir_x(Obj_BattleArea.x + 64, ran)
-			var yy = lengthdir_y(Obj_BattleArea.y + 64, ran)
-			var bullet = instance_create_layer(xx, yy, depth, Obj_Clubs);
-			bullet.direction = point_direction(bullet.x, bullet.y, Obj_Heart.x, Obj_Heart.y);
-			bullet.speed = 5;
+			if timer >= 10
+			{
+				timer = 0;
+				
+				var bullet = instance_create_layer(random_range(left + 4, right - 4), top - 24, layer, Obj_Clubs);
+				bullet.image_xscale = 0.75;
+				bullet.image_yscale = 0.75;
+				bullet.direction = 270;
+				bullet.image_angle = 270;
+				bullet.speed = -1.5;
+				bullet.gravity = 0.15;
+			}
 		}
+		break;
 	}
-	break;
 }

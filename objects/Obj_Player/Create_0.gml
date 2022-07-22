@@ -35,4 +35,8 @@ for(var i = arraySize - 1; i >= 0; i--;)
 	followX[i] = x;
 	followY[i] = y;
 	followDir[i] = direction;
+	followSpeed[i] = star_SpeedWalk;
 }
+
+canMove = true;
+fakeVisible = true;

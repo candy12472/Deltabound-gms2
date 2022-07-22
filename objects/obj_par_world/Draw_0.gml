@@ -6,4 +6,5 @@
 /* Done within WORLD Object */
 
 //---// Draw Self
-draw_self()
+if fakeVisible = true
+	draw_self()

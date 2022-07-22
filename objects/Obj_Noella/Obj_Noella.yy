@@ -27,7 +27,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"steps","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"45","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"steps","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"idleSprite","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"objectId":{"name":"Obj_Par_Character","path":"objects/Obj_Par_Character/Obj_Par_Character.yy",},"value":"Spr_NoeIdle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {

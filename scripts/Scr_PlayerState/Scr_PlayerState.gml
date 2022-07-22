@@ -10,7 +10,7 @@ function DynaState() {
 	state = pointer_null;
 	
 	//Decide which state should be executed
-	if !instance_exists(Obj_Textbox) && !instance_exists(Obj_Battle) && !place_meeting(x, y, Obj_Par_Enemy) state = PlayerStateFree;
+	if canMove state = PlayerStateFree;
 	else state = PlayerStateStall;
 
 	//Execute State
@@ -35,7 +35,10 @@ function PlayerStateFree() {
 	if(kin_InputMag != 0)
 	{
 		direction = kin_InputDir;
-		sprite_index = star_PlayerWalk;
+		if star_SpeedWalk = 1.5
+			sprite_index = star_PlayerWalk;
+		else
+			sprite_index = star_PlayerWalk;
 	}
 	else sprite_index = star_PlayerIdle;
 	if(temp_OldSprite != sprite_index) star_LocalFrame = 0;

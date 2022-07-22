@@ -13,7 +13,7 @@ for(var i = 0; i < array_length(global.party); i++;)
 	
 		showH = (real(showH) < 10) ? "0" + "0" + string(showH): showH; 
 		showT = (real(showT) < 10) ? "0" + "0" + string(showT): showT; 
-		showO = (real(showO) < 10) ? "0" + "0" + string(showO): showO; 
+		showO = (real(showO) < 10) ? "0" + "0" + string(showO): showO;
 	} 
 
 	//Numbers back to 0 after the last frame 

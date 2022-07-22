@@ -10,7 +10,8 @@ global.songPlaying = false;
 global.charNumber = 2;
 global.battle = false;
 global.party = [0, 1, 2];
-global.char = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, Obj_HeroNoella]
+global.hero = [Obj_HeroChris, Obj_HeroSuzy, Obj_HeroBirdly, Obj_HeroNoella]
+global.char = ["Player", "Suzy", "Birdly", "Noella"]
 
 //Positions for heros and monsters
 global.heroX = [64, 32, 32];
@@ -19,20 +20,25 @@ global.monsterX = [256, 0, 0];
 global.monsterY = [96, 0, 0];	
 
 //Health points of every character
-global.hp[0] = "125";
-global.hp[1] = "30";
-global.hp[2] = "8";
+global.hp[0] = 200;
+global.hp[1] = 200;
+global.hp[2] = 200;
 
 //-----Item Start-Up
-for(var i = 0; i < 14; i += 1;)
+for(var i = 0; i < 14; i++;)
 {
 	global.item[i] = 0;
 	global.itemName[i] = " ";
 	global.itemDesc[i] = " ";
 	global.itemValue[i] = 0;
+	global.itemHP[i] = 0;
 }
 
-global.item[0] = 3;
+global.item[0] = 1;
+global.item[1] = 2;
+global.item[2] = 3;
+global.item[3] = 4;
+global.item[4] = 5;
 
 Scr_ItemInfoAll();
 

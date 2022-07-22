@@ -47,7 +47,7 @@ switch(state)
 	{
 		sprite_index = enterSprite;
 		
-		if image_index >= image_number
+		if image_index >= image_number - 1
 		{
 			state = states.idle;
 		}
@@ -101,9 +101,19 @@ switch(state)
 	{
 		sprite_index = itemSprite;
 		
-		if image_index >= image_number - 1
+		if !itemReady
 		{
-			image_index = 0;
+			if image_index >= 3
+			{
+				image_index = 0;
+			}
+		}
+		else
+		{
+			if image_index >= image_number - 1
+			{
+				state = states.idle;
+			}
 		}
 	}
 	break;

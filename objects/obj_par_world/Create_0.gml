@@ -5,3 +5,4 @@
 //---// Disable Standard Drawing
 visible = false;
 
+fakeVisible = true;

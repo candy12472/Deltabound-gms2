@@ -16,7 +16,7 @@ if cooldown <= 0
 	damage = irandom_range(40, 60);
 	
 	//
-	with(global.char[target])
+	with(global.hero[target])
 	{
 		//Shake effect for the target
 		shakeValue = 3;

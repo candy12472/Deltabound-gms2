@@ -42,11 +42,11 @@ switch(object_index)
 	{
 		enterSprite = Spr_BirdlyBattleStart;
 		idleSprite = Spr_BirdlyIdle;
-		attackSprite = Spr_ChrisAttack;
+		attackSprite = Spr_BirdlyAttack;
 		hurtSprite = Spr_BirdlyHurt;
-		actSprite = Spr_ChrisAct;
-		itemSprite = Spr_ChrisIdle;
-		defendSprite = Spr_ChrisIdle;
+		actSprite = Spr_BirdlyAct;
+		itemSprite = Spr_BirdlyIdle;
+		defendSprite = Spr_BirdlyIdle;
 		defeatSprite = Spr_BirdlyDefeat;
 		character = 2;
 	}
@@ -83,3 +83,6 @@ enum states
 }
 
 state = states.entrance;
+
+text = "";
+color = c_white;

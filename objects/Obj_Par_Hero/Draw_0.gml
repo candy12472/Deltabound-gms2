@@ -1,16 +1,14 @@
 draw_self();
 
 //Draw damage text
-if alpha > 0 && instance_exists(Obj_Heart)
+if alpha > 0
 {
-	draw_text_transformed_color(xPos + 3, yPos - 15, Obj_Heart.damage, 1, 1, 0, c_white, c_white, c_white, c_white, alpha);
+	draw_text_transformed(x + 3, y - 8, text, 1, 1, 0);
+	draw_set_alpha(alpha);
+	draw_set_color(color);
 	
 	if timer <= 0
 	{
 		alpha -= 0.05;
 	}
-}
-else if !instance_exists(Obj_Heart)
-{
-	alpha = 0;
 }

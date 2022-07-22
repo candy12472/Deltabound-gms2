@@ -1,7 +1,6 @@
 //---------------End Battle
 function Scr_BattleEnd()
 {
-	
 	//Delete the enemy of the battle
 	with(Obj_Par_Enemy)
 	{
